@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexcontainer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar{
+            width: 20%;
+            height: 500px;
+            background-color: rgb(30, 114, 170);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .main{
+            width: 70%;
+            height: 500px;
+            background-color: cadetblue;
+        }
+
+        .title{
+            color: white;
+            text-align: center;
+            margin: 10px 5px;
+            height: 40px;
+            background-image: url('assets/logotipo.png');
+            background-size: 70%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar__item,
+        .important__item{
+            padding: 5px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .important__item{
+            margin: 5px 15px;
+            padding: 2px;
+            border-radius: 8px;
+            text-align: center;
+            font-style: italic;
+            background-color: white;
+            color:rgb(30, 114, 170);
+        }
+
+        .main{
+            display: flex;
+            background: url('assets/backgrund.png');
+            background-size: 100%;
+        }
+
+        .left{
+            width: 50%;
+        }
+
+        .left .where{
+            margin-top: 100px;
+            padding: 0px 20px;
+            font-size: 48px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .left .inputs{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .left input{
+            font-size: 10px;
+        }
+
+        .findus{
+            color:rgb(30, 114, 170);
+        }
+
+        .right{
+            background: url('assets/image-header.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 50%;
+            margin: 50px 10px 10px 0px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .callus{
+            width: 300px;
+            font-size: 12px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 160px;
+            margin-bottom: 5px;
+        }
+
+        .second{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flexcontainer">        
+        <section class="sidebar">
+            <article class="navbar">
+                <div class="title"></div>
+                <div class="navbar__item">Home</div>
+                <div class="navbar__item">Learn to Drive</div>
+                <div class="navbar__item">Location</div>
+                <div class="navbar__item">Offers</div>
+                <div class="navbar__item">Contact</div>
+            </article>
+            <article class="bottombar">
+                <div class="important__item">Book Online</div>
+                <div class="important__item">Login</div>
+            </article>
+        </section>
+
+        <section class="main">
+            <section class="left">
+                <article class="where">WHERE YOU CAN <div class="findus">FIND US</div></article>
+                <article class="inputs"> 
+                    <input type="text" placeholder="Enter your Address or Postcode" />
+                    <input type="button" value="SUBMIT"> 
+                </article>
+            </section>
+            <section class="right">
+                <section class="callus">                
+                    <div class="first">Call us for other question</div>
+                    <div class="second">(465) 267-4229</div>
+                </section>
+            </section>
+            
+        </section>
+    </div>
+</body>
+</html>
