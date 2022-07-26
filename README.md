@@ -1,1 +1,1 @@
-# practices
+# Code learging jurney
